@@ -1,11 +1,13 @@
 function initState() {
+  let startX =  Math.floor(Math.random() * 700);
+  let startY = Math.floor(Math.random() * 500);
   const state = {
     player: 'Pesho',
     wizard: {
       width: 82,
       height: 100,
-      startX: Math.floor(Math.random() * 700),
-      startY: Math.floor(Math.random() * 500),
+      posX: startX,
+      posY: startY,
     },
     keys: {}
   }
