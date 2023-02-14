@@ -1,5 +1,5 @@
 function initState() {
-  let startX = Math.floor(Math.random() * 700);
+  let startX = Math.floor(Math.random() * 1000);
   let startY = Math.floor(Math.random() * 500);
   const state = {
     player: "Pesho",
@@ -16,6 +16,10 @@ function initState() {
       nextSpawnTimestamp: 0,
       maxSpawnInterval: 1500,
       speed: 6
+    },
+    fireball:{
+      width: 20,
+      height: 20,
     },
     keys: {
       KeyA: false,
