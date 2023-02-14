@@ -22,6 +22,7 @@ function initState() {
       KeyS: false,
       KeyD: false,
       KeyW: false,
+      Space: false,
     },
   };
 

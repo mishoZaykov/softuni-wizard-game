@@ -6,6 +6,7 @@ const availableKeys = [
   'KeyS',
   'KeyD',
   'KeyW',
+  'Space',
 ];
 
 document.addEventListener('keydown', (e)=>{
@@ -21,7 +22,6 @@ document.addEventListener('keyup', (e)=>{
 });
 
 game.startScreen.addEventListener("click", (e) => {
-
   game.startScreen.classList.add("hidden");
   game.gameScreen.classList.remove("hidden");
 

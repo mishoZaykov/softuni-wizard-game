@@ -10,6 +10,12 @@ function gameLoop(state, game, timestamp) {
 
   modifyWizardPossition(state, game);
 
+  if(state.keys.Space){
+    game.wizardElement.style.backgroundImage = 'url(/src/images/wizard-fire.png)';
+  }else{
+    game.wizardElement.style.backgroundImage = 'url(/src/images/wizard.png)';
+  }
+
   //Spawn bugs
   if(timestamp > state.bugStats.nextSpawnTimestamp){
     game.createBug(state.bugStats);
@@ -26,7 +32,7 @@ function gameLoop(state, game, timestamp) {
       bug.remove();
     }
    
-  })
+  });
 
 
   //Render wizard
