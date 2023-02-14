@@ -1,8 +1,8 @@
 function initState() {
-  let startX =  Math.floor(Math.random() * 700);
+  let startX = Math.floor(Math.random() * 700);
   let startY = Math.floor(Math.random() * 500);
   const state = {
-    player: 'Pesho',
+    player: "Pesho",
     wizard: {
       width: 82,
       height: 100,
@@ -10,8 +10,17 @@ function initState() {
       posY: startY,
       speed: 10,
     },
-    keys: {}
-  }
+    bugStats:{
+      width: 50,
+      height: 50,
+    },
+    keys: {
+      KeyA: false,
+      KeyS: false,
+      KeyD: false,
+      KeyW: false,
+    },
+  };
 
   return state;
 }
