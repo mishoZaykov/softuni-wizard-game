@@ -8,19 +8,21 @@ function initState() {
       height: 100,
       posX: startX,
       posY: startY,
-      speed: 10,
+      speed: 6,
     },
     bugStats:{
       width: 50,
       height: 50,
       nextSpawnTimestamp: 0,
       maxSpawnInterval: 1500,
-      speed: 6
+      speed: 4,
     },
     fireball:{
       width: 20,
       height: 20,
-      speed: 12,
+      speed: 7,
+      nextSpawnTimestamp: 0,
+      fireRate: 500,
     },
     keys: {
       KeyA: false,
